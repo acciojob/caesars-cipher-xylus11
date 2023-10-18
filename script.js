@@ -38,7 +38,12 @@ function rot13(encodedStr) {
 	let a="";
 	for(let i =0;i<Str.length;i++)
 		{
-			a+=lookup[Str[i];
+			if(Str[i])
+			{			a+=lookup[Str[i];
+			}
+			else{
+				a+= Str[i];
+			}
 			
 		}
 
